@@ -6,6 +6,9 @@ Supports Windows (win32), OSX (darwin) and Linux platforms
 Windows version uses nircmd (http://nircmd.nirsoft.net)
 Linux version uses scrot
 
+## How to install
+This is a forked version of a module, so to install it in your project use `yarn add https://github.com/jhotujec/node-desktop-screenshot`
+
 ## Available Options ##
 
 - quality: JPEG quality (0 to 100)
