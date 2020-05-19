@@ -60,9 +60,10 @@ Screenshot.prototype.processImage = function(input, output, options, callback) {
 
 				if(typeof options.quality === "number" && options.quality >= 0 && options.quality <= 100)
 					image.quality(Math.floor(options.quality)); // only works with JPEGs
-				image.blur(100)
-				console.log('blur works')
-				image.write(output, callback);
+
+				image
+					.blur(10)
+					.write(output, callback);
 			}
 			catch(error) {
 				callback(error);
